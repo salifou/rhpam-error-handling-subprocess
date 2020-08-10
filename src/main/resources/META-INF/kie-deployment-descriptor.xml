@@ -13,15 +13,7 @@
         <work-item-handler>
             <resolver>mvel</resolver>
             <identifier>new org.jbpm.process.workitem.rest.RESTWorkItemHandler(classLoader, "error-handler", "COMPLETE")</identifier>
-            <parameters>
-                <parameter xsi:type="objectModel">
-                    <resolver>mvel</resolver>
-                    <identifier>java.lang.String</identifier>
-                    <parameters>
-                        <parameter xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema"></parameter>
-                    </parameters>
-                </parameter>
-            </parameters>
+            <parameters/>
             <name>Rest</name>
         </work-item-handler>
     </work-item-handlers>
