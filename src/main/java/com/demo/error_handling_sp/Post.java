@@ -6,12 +6,54 @@ package com.demo.error_handling_sp;
 
 public class Post implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Post() {
-    }
+	private java.lang.Long id;
+	private java.lang.String title;
+	private java.lang.String body;
+	private java.lang.Long userId;
 
+	public Post() {
+	}
 
+	public java.lang.Long getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
+	public java.lang.String getTitle() {
+		return this.title;
+	}
+
+	public void setTitle(java.lang.String title) {
+		this.title = title;
+	}
+
+	public java.lang.String getBody() {
+		return this.body;
+	}
+
+	public void setBody(java.lang.String body) {
+		this.body = body;
+	}
+
+	public java.lang.Long getUserId() {
+		return this.userId;
+	}
+
+	public void setUserId(java.lang.Long userId) {
+		this.userId = userId;
+	}
+
+	public Post(java.lang.Long id, java.lang.String title,
+			java.lang.String body, java.lang.Long userId) {
+		this.id = id;
+		this.title = title;
+		this.body = body;
+		this.userId = userId;
+	}
 
 }
