@@ -56,8 +56,8 @@ public class Post implements java.io.Serializable {
 		this.userId = userId;
 	}
 	
-	public void toString() {
-	    System.out.println("Post: userId="+userId+", id="+id+", title="+title+", body="+body);
+	public String toString() {
+	    return "Post: userId="+userId+", id="+id+", title="+title+", body="+body;
 	}
 
 }
