@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_nVq4cNsmEeqoLMWe5IZGRA" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_FnFBcNsnEeqoLMWe5IZGRA" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_DeploymentIdItem" structureRef="String"/>
   <bpmn2:itemDefinition id="_ProcessInstanceIdItem" structureRef="java.lang.Long"/>
   <bpmn2:itemDefinition id="_WorkitemIdItem" structureRef="java.lang.Long"/>
@@ -42,7 +42,7 @@
       <bpmn2:incoming>_FDB6AC38-C3F3-4808-AC36-34F802F0FEC9</bpmn2:incoming>
       <bpmn2:outgoing>_B1D4A7FA-8BEA-4670-8035-592D31F00FD9</bpmn2:outgoing>
       <bpmn2:script><![CDATA[System.out.println("DeploymentId: " + DeploymentId);
-System.out.println("ProcessInstanceId: " + );
+System.out.println("ProcessInstanceId: " + ProcessInstanceId);
 System.out.println(">>> Exception \n" + Error +"\n" );
 
 String _outcome = "[Error Handler] ... SUCCESS"
@@ -57,8 +57,8 @@ System.out.println("outcome: " + outcome );
       <bpmn2:incoming>_B1D4A7FA-8BEA-4670-8035-592D31F00FD9</bpmn2:incoming>
     </bpmn2:endEvent>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="_nVq4cdsmEeqoLMWe5IZGRA">
-    <bpmndi:BPMNPlane id="_nVq4ctsmEeqoLMWe5IZGRA" bpmnElement="error-handler">
+  <bpmndi:BPMNDiagram id="_FnFBcdsnEeqoLMWe5IZGRA">
+    <bpmndi:BPMNPlane id="_FnFBctsnEeqoLMWe5IZGRA" bpmnElement="error-handler">
       <bpmndi:BPMNShape id="shape__778E340E-F9E9-4A96-92A6-5DD6A36F58D5" bpmnElement="_778E340E-F9E9-4A96-92A6-5DD6A36F58D5">
         <dc:Bounds height="56.0" width="56.0" x="687.0" y="120.0"/>
       </bpmndi:BPMNShape>
@@ -78,19 +78,19 @@ System.out.println("outcome: " + outcome );
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_nVq4c9smEeqoLMWe5IZGRA" type="BPSimData">
+  <bpmn2:relationship id="_FnFBc9snEeqoLMWe5IZGRA" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_1F4FEBD1-C479-421D-8275-BBDBAC0B4BC5" id="_nVq4dNsmEeqoLMWe5IZGRA">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_1F4FEBD1-C479-421D-8275-BBDBAC0B4BC5" id="_FnFBdNsnEeqoLMWe5IZGRA">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
               </bpsim:ProcessingTime>
             </bpsim:TimeParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_3E743819-999B-4969-95F1-101E53C5AE51" id="_nVq4ddsmEeqoLMWe5IZGRA">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_3E743819-999B-4969-95F1-101E53C5AE51" id="_FnFBddsnEeqoLMWe5IZGRA">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -113,7 +113,7 @@ System.out.println("outcome: " + outcome );
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_nVq4cNsmEeqoLMWe5IZGRA</bpmn2:source>
-    <bpmn2:target>_nVq4cNsmEeqoLMWe5IZGRA</bpmn2:target>
+    <bpmn2:source>_FnFBcNsnEeqoLMWe5IZGRA</bpmn2:source>
+    <bpmn2:target>_FnFBcNsnEeqoLMWe5IZGRA</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
