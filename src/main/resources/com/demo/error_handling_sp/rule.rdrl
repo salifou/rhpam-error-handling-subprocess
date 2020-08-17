@@ -1,0 +1,9 @@
+package com.demo.error_handling_sp;
+
+import java.lang.Number;
+
+rule "rule"
+	dialect "mvel"
+	when
+	then
+end
