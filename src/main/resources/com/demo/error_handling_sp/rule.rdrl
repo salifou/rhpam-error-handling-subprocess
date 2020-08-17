@@ -4,6 +4,7 @@ import java.lang.Number;
 
 rule "rule"
 	dialect "mvel"
+	ruleflow-group "ruleflow1"
 	when
 		p : Post( id == 1 )
 	then
