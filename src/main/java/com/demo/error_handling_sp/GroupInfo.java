@@ -59,5 +59,9 @@ public class GroupInfo implements java.io.Serializable {
 		this.groupNumber = groupNumber;
 		this.groupCoverages = groupCoverages;
 	}
+	
+		public String toString() {
+	    return "GroupInfo[groupName="+groupName+", groupStatus="+groupStatus+", groupNumber="+groupNumber+", groupCoverages="+groupCoverages+"]";
+	}
 
 }
