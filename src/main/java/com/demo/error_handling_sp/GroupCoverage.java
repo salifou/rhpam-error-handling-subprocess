@@ -35,5 +35,9 @@ public class GroupCoverage implements java.io.Serializable {
 		this.prodStatus = prodStatus;
 		this.groupProduct = groupProduct;
 	}
+	
+	public String toString() {
+	    return "GroupCoverage[prodStatus="+prodStatus+", groupProduct="+groupProduct+"]";
+	}
 
 }
