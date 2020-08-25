@@ -6,12 +6,34 @@ package com.demo.error_handling_sp;
 
 public class GroupCoverage implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public GroupCoverage() {
-    }
+	private java.lang.String prodStatus;
+	private java.lang.String groupProduct;
 
+	public GroupCoverage() {
+	}
 
+	public java.lang.String getProdStatus() {
+		return this.prodStatus;
+	}
 
+	public void setProdStatus(java.lang.String prodStatus) {
+		this.prodStatus = prodStatus;
+	}
+
+	public java.lang.String getGroupProduct() {
+		return this.groupProduct;
+	}
+
+	public void setGroupProduct(java.lang.String groupProduct) {
+		this.groupProduct = groupProduct;
+	}
+
+	public GroupCoverage(java.lang.String prodStatus,
+			java.lang.String groupProduct) {
+		this.prodStatus = prodStatus;
+		this.groupProduct = groupProduct;
+	}
 
 }
