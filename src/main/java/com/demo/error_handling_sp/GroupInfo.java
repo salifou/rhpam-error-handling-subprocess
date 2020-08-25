@@ -6,12 +6,58 @@ package com.demo.error_handling_sp;
 
 public class GroupInfo implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public GroupInfo() {
-    }
+	private java.lang.String groupName;
+	private java.lang.String groupStatus;
+	private java.lang.String groupNumber;
+	private java.util.List<com.demo.error_handling_sp.GroupCoverage> groupCoverages;
 
+	public GroupInfo() {
+	}
 
+	public java.lang.String getGroupName() {
+		return this.groupName;
+	}
 
+	public void setGroupName(java.lang.String groupName) {
+		this.groupName = groupName;
+	}
+
+	public java.lang.String getGroupStatus() {
+		return this.groupStatus;
+	}
+
+	public void setGroupStatus(java.lang.String groupStatus) {
+		this.groupStatus = groupStatus;
+	}
+
+	public java.lang.String getGroupNumber() {
+		return this.groupNumber;
+	}
+
+	public void setGroupNumber(java.lang.String groupNumber) {
+		this.groupNumber = groupNumber;
+	}
+
+	public java.util.List<com.demo.error_handling_sp.GroupCoverage> getGroupCoverages() {
+		return this.groupCoverages;
+	}
+
+	public void setGroupCoverages(
+			java.util.List<com.demo.error_handling_sp.GroupCoverage> groupCoverages) {
+		this.groupCoverages = groupCoverages;
+	}
+
+	public GroupInfo(
+			java.lang.String groupName,
+			java.lang.String groupStatus,
+			java.lang.String groupNumber,
+			java.util.List<com.demo.error_handling_sp.GroupCoverage> groupCoverages) {
+		this.groupName = groupName;
+		this.groupStatus = groupStatus;
+		this.groupNumber = groupNumber;
+		this.groupCoverages = groupCoverages;
+	}
 
 }
